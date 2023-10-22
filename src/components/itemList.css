@@ -1,0 +1,11 @@
+.itemList{
+    background-color: white;
+    width : 500px;
+    position: relative;
+    left : 400px;
+    bottom: 140px;
+    border-radius: 5px;
+}
+.itemList li{
+    list-style-type: none;
+}
