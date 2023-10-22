@@ -1,17 +1,22 @@
 .header{
     background-color: brown;
-    height : 100px;
+    height : 140px;
     width : 100vw;
-    margin-top : -20px;
+
+    position: fixed;
+    bottom: 650px;
+    margin: 0%;
 }
 .header h2{
     color : white;
     position: absolute;
     left : 150px;
-    top : 3px;
+    top : 50px;
 }
 
 .images img{
+    position: absolute;
+    bottom: 400px;
     height : 250px;
   width : 100vw;
     object-fit: cover;

@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import ItemList from "./components/ItemList";
+import Overlay from "./components/Overlay";
 import Summary from "./components/Summary";
 
 function App() {
@@ -21,10 +22,11 @@ function App() {
     itemPrice : '$87.54'
   }]
   return (
-    <div>
+    <div className="app">
     <Header />
     <Summary />
     <ItemList data = {data} />
+    <Overlay/>
     </div>
   );
 }

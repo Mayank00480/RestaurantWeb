@@ -3,7 +3,7 @@
     width : 500px;
     position: relative;
     left : 400px;
-    bottom: 140px;
+    top : 60px;
     border-radius: 5px;
 }
 .itemList li{
@@ -17,7 +17,7 @@
     position: relative;
     float: right;
    right: 40px;
-    bottom : 20px;
+   bottom : 20px;
 }
 .itemList form button{
     background-color: brown;

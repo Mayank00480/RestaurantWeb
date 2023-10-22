@@ -1,0 +1,36 @@
+.overlay{
+    background-color: white;
+    width : 600px;
+    position : relative;
+    top: 200px;
+    left : 370px;
+    height : 140px;
+    border-radius: 5px;
+    z-index: 1;
+    
+}
+.headings{
+    position: relative;
+    
+}
+.headings h3{
+   position: relative;
+   left : 500px;
+   bottom: 50px;;
+}
+.overlay  button{
+    position: relative;
+    bottom: 40px;
+    left : 280px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+#root{ filter: blur(8px);
+    -webkit-filter: blur(8px);
+  }
+.overlay p {
+    position: relative;
+    top:10px;
+}
