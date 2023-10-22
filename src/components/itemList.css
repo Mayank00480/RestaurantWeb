@@ -8,4 +8,24 @@
 }
 .itemList li{
     list-style-type: none;
+    height : 40px;
+}
+.itemList form input{
+    width : 30px;
+}
+.itemList form{
+    position: relative;
+    float: right;
+   right: 40px;
+    bottom : 20px;
+}
+.itemList form button{
+    background-color: brown;
+    color : white;
+    border-radius: 5px;
+    cursor : pointer
+}
+.itemList input {
+    position: relative;
+    left : 5px;
 }
