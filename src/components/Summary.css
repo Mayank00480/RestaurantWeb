@@ -1,9 +1,9 @@
 .summary{
     color : white;
     background-color: #3f3f3f;
-    position: relative;
+    position: fixed;
     left : 270px;
-    top : 55px;
+    top : 170px;
     border-radius: 10px;
     border : 1px solid black;
     padding: 10px;

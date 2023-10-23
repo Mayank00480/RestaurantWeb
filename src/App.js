@@ -2,8 +2,15 @@ import Header from "./components/Header";
 import ItemList from "./components/ItemList";
 import Overlay from "./components/Overlay";
 import Summary from "./components/Summary";
-
+import React ,{useState} from 'react';
 function App() {
+  const [cart , setCart] = useState();
+  const closeHandler = () =>{
+   setCart(false);    
+  }
+  const clickHandler = () =>{
+    setCart(true)
+  }
   const data = [{
     itemName : 'Sushi',
     itemDescription : 'Finest Fish and veggies',
@@ -23,10 +30,10 @@ function App() {
   }]
   return (
     <div className="app">
-    <Header />
+    <Header clickHandler = {clickHandler} />
     <Summary />
     <ItemList data = {data} />
-    <Overlay/>
+    {cart && <Overlay closeHandler = {closeHandler}/>}
     </div>
   );
 }

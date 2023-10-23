@@ -27,9 +27,6 @@
     margin-right: 10px;
 }
 
-#root{ filter: blur(8px);
-    -webkit-filter: blur(8px);
-  }
 .overlay p {
     position: relative;
     top:10px;

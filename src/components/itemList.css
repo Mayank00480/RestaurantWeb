@@ -1,9 +1,9 @@
 .itemList{
     background-color: white;
     width : 500px;
-    position: relative;
+    position: fixed;
     left : 400px;
-    top : 60px;
+    top : 380px;
     border-radius: 5px;
 }
 .itemList li{

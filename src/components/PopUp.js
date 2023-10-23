@@ -1,5 +1,8 @@
 import React from "react"
-export const PopUp = () =>{
+export const PopUp = (props) =>{
+    const closeHandler = () =>{
+          props.closeHandler();
+    }
     return <div className = "overlay">
     <p>Sushi</p>
     <div className = "headings">
@@ -7,7 +10,7 @@ export const PopUp = () =>{
         <h3>35.62</h3>
         </div>
         <div className = "btn">
-            <button type = "button"> close</button>
+            <button type = "button" onClick = {closeHandler}> close</button>
             <button type = "button"> Open</button>
         </div>
     </div>
