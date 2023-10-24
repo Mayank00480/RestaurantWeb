@@ -14,7 +14,7 @@ const clickHandler  = () =>{
   return (
     <button onClick = {clickHandler} className = "cartButton">
       Your cart 
-      <span>{qty}</span>
+      <span style = {{marginLeft : '15px'}}>{qty}</span>
     </button>
   )
 }

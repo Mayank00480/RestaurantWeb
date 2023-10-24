@@ -19,7 +19,7 @@ export const PopUp = (props) =>{
     return <>
  <div className = "overlay">
  <ul>{cntxt.items.map((item) =>{
-       return <li>name:  {item.name} description : {item.description} Price : {item.price} Quantity : {item.quantity}</li> 
+     return  <li>name:  {item.name} description : {item.description} Price : {item.price} Quantity : {item.quantity}</li> 
     })}</ul>
     <div className = "headings" style = {{backgroundColor : 'white'}}>
         <h2>Total Amount </h2>

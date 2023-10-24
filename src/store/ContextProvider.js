@@ -3,10 +3,26 @@ import StoreContext from './storeContext.js'
 const ContextProvider = (props) => {
   let [data ,setData] = useState([])
     const addItemsToCartHandler =(item) =>{
-       setData([...data , item])
+      let flag = false;
+      setData(data.map((val) =>{
+        if(item.name == val.name){
+          val.quantity = Number(val.quantity) + Number(item.quantity);
+          flag = true;
+          return val;
+        }
+      }))
+       if(item.quantity > 0 && !flag)  setData([...data , item])
     }
-    const removeItemsFromCartHandler =() =>{
+    const removeItemsFromCartHandler =(id) =>{
+        setData(data.map((item) =>{
+          if(id == item.id && item.quantity > 0) {
+         item.quantity--;
+         return item;
+          }  
+          else if(item.quantity > 0)return item;
         
+        }))
+        console.log(data)
     }
     const createContext = {
         items : data,
