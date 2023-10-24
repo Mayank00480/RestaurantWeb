@@ -3,6 +3,8 @@ import ItemList from "./components/ItemList";
 import Overlay from "./components/Overlay";
 import Summary from "./components/Summary";
 import React ,{useState} from 'react';
+import ContextProvider from "./store/ContextProvider"; 
+import { PopUp } from "./components/PopUp";
 function App() {
   const [cart , setCart] = useState();
   const closeHandler = () =>{
@@ -11,30 +13,32 @@ function App() {
   const clickHandler = () =>{
     setCart(true)
   }
+
   const data = [{
     itemName : 'Sushi',
     itemDescription : 'Finest Fish and veggies',
-    itemPrice : '$22.99'
+    itemPrice : '22.99'
   },{
     itemName : 'Schnitzel',
     itemDescription : 'A german speciality!',
-    itemPrice : '$16.50'
+    itemPrice : '16.50'
   },{
     itemName : 'Barbecue',
     itemDescription : 'American,raw,meaty',
-    itemPrice : '$12.99'
+    itemPrice : '12.99'
   },{
     itemName : 'Green Bowl',
     itemDescription : 'Healthy...and green...',
-    itemPrice : '$87.54'
+    itemPrice : '87.54'
   }]
   return (
-    <div className="app">
+    <ContextProvider>
     <Header clickHandler = {clickHandler} />
     <Summary />
     <ItemList data = {data} />
-    {cart && <Overlay closeHandler = {closeHandler}/>}
-    </div>
+{cart  && <Overlay closeHandler = {closeHandler}/>}
+ 
+   </ContextProvider>
   );
 }
 
